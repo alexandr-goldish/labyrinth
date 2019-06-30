@@ -1,0 +1,54 @@
+.mapLab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mapNumber, .mapChar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mapNumber div {
+  width: 30px;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
+.mapChar {
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 7px;
+}
+.mapChar div {
+  height: 30px;
+  line-height: 30px;
+  width: 30%;
+}
+.mapChar div, .mapNumber div {
+  background-color: rgba(0, 0, 0, .7);
+  border-radius: 6px;
+}
+table tr td {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.6);
+  transition: .3s;
+  font-size: 32px
+}
+table tr td:hover {
+  background-color: rgba(0,0,0,0.1);
+  transition: .3s;
+  transform: scale(1.1);
+  font-size: 52px;
+  cursor: pointer;
+  font-size: 48px;
+}
+.white {
+  background-color: #ffffff;
+  color: #222222;
+}
