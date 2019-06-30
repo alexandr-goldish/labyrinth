@@ -82,13 +82,15 @@ class App extends React.Component {
   }
   getPoint = (value) => {
     if(value === this.state.finalPoint) {
+      let rang = this.state.countWin+1
       this.setState({
-        countWin: ++this.state.countWin
+        countWin: rang
       })
     }
     else {
+      let rang = this.state.countLose+1
       this.setState({
-        countLose: ++this.state.countLose
+        countLose: rang
       })
     }
     setTimeout(() => {
